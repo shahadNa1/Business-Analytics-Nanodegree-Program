@@ -1,0 +1,49 @@
+/* Query 1 */
+
+SELECT Customer.Country, COUNT(Invoice.InvoiceId) AS Invoices
+FROM Invoice
+JOIN Customer ON Invoice.CustomerID = Customer.CustomerID
+GROUP BY Country
+order BY Invoices DESC;
+
+----------------------------------------
+
+/* Query 2 */
+
+SELECT trk.Name, trk.Milliseconds
+FROM Track trk
+WHERE trk.Milliseconds > 	( SELECT AVG(Milliseconds) FROM  Track)
+ORDER BY trk.Milliseconds desc;
+-------------------------------------------
+
+/* Query 3 */
+
+SELECT C.CUSTOMERID,sum(i.Total) as TotalSpent FROM Customer c, Invoice i
+WHERE c.CustomerId=i.CustomerId
+GROUP BY 1
+ORDER BY 2 desc;
+
+-------------------------------------------
+
+/* Query 4 */
+
+SELECT distinct cust.email as Email, cust.FirstName as FirstName, cust.LastName as LastName, gen.name as Name
+FROM Genre gen, Track trk, InvoiceLine il, Invoice inv, Customer cust
+WHERE gen.name='Rock' and
+gen.GenreId=trk.GenreId and
+trk.TrackId=il.TrackId and
+il.InvoiceId=inv.InvoiceId and
+inv.CustomerId=cust.CustomerId
+ORDER BY Email;
+--------------------------------------------
+/* Query 5 */ 
+
+SELECT a.Name as  'ArtistName', sum(il.UnitPrice * il.Quantity)as 'AmountSpent' 
+FROM InvoiceLine il, Track trk, Album alb, Artist a
+WHERE il.TrackId=trk.TrackId and
+alb.AlbumId=trk.AlbumId and
+a.ArtistId=alb.ArtistId
+GROUP BY a.ArtistId
+ORDER BY AmountSpent desc
+
+-------------------------------------------
