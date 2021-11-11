@@ -9,3 +9,7 @@ In this project, you’ll explore an interactive data dashboard to uncover insig
 2- [Project 2](https://github.com/shahadNa1/Business-Analytics-Nanodegree-Program/tree/main/Project%202) Analyze NYSE Data:
 
 In this project we will analyze real life data from the smaller subset of the data created for us, I will go through the process of calculating summary statistics, drawing an inference from the statistics, calculating business metrics and using models to forecast future growth prospects for the companies.
+
+3- [Project 3](https://github.com/shahadNa1/Business-Analytics-Nanodegree-Program/tree/main/Project%203) Chinook Database:
+
+In this project, you will query a digital music store database which holds information regarding the store’s media, employees, and customers. You will use the database to help the store gain an understanding of the types of music that are purchased, where customers live, and how the company might optimize their business practices.
