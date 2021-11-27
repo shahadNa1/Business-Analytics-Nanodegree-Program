@@ -13,3 +13,7 @@ In this project we will analyze real life data from the smaller subset of the da
 3- [Project 3](https://github.com/shahadNa1/Business-Analytics-Nanodegree-Program/tree/main/Project%203) Chinook Database:
 
 In this project, you will query a digital music store database which holds information regarding the store’s media, employees, and customers. You will use the database to help the store gain an understanding of the types of music that are purchased, where customers live, and how the company might optimize their business practices.
+
+3- [Project 4](https://github.com/shahadNa1/Business-Analytics-Nanodegree-Program/tree/main/Project%204) Build Data Dashboards wiht Tableau:
+
+In this project, I’ll build interactive dashboards with Tableau and use them to discover and communicate insights from data. You’ll use a dataset of flight delays in the US to visualize the quality of airlines and airports, find the best times to fly, and more.
